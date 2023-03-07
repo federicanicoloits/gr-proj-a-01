@@ -19,8 +19,8 @@ Javascript, HTML
 
 ## Author
 ***
-Author: Federica Nicolò  
-Contact Information: federica.nicolo@edu.itspiemonte.it
+Author: Federica Nicolò   
+Contact Information: federica.nicolo@edu.itspiemonte.it  
 Role: Frontend Developer
 
 ## License
@@ -33,7 +33,7 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
 ## Standard Used
 ***
-Variables: camelCase
+Variables: camelCase  
 Files and Folder: kebab-case
 
 ## Browser Compatibility
