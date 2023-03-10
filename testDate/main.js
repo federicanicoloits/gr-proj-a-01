@@ -1,4 +1,4 @@
-// prende la data attuale e restituisce un oggetto
+// prende la data attuale e restituisce un oggetto, cosi ci possiamo lavorare sopra
 let formatDate = () => {
   const date = new Date();
   let year = date.getFullYear();
@@ -12,7 +12,8 @@ let formatDate = () => {
 
 // prende un oggetto ritorna una stringa
 let printDate = (objectDate) => {
-  let unionDate = (objectDate.day + '-' + objectDate.month + '-' + objectDate.year);
+  let monthsList = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  let unionDate = (objectDate.day + '-' + monthsList[objectDate.month] + '-' + objectDate.year);
   return unionDate;
 }
 
