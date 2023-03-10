@@ -3,7 +3,34 @@
  * @author: 
  * 
  */
-
+let sequentialID = 0;
+/**
+ * This function return the unique ID of a product
+ * @param {number} sequenID - the sequential number to increment
+ * @param {number} zerID 
+ * @returns {string} ID
+ */
+function generateID(sequenID, zerID){
+  // increment sequentialID by one
+  sequenID++;
+  // convert sequenID to a string and assign it to stringSequenID
+  let stringSequenID = sequenID.toString();
+  // assign the sum of zerID and 1 to stringZeroID
+  let stringZeroID = zerID + 1;
+  // convert stringZeroID to a string
+  stringZeroID = stringZeroID.toString();
+  let ID;
+  // check if the length of stringSequenID is less than or equal to the length of stringZeroID
+  if (stringSequenID.length <= stringZeroID.length){
+    // if the condition is true, pad stringSequenID with zeros at the beginning until it has a length of zeroID + 1, and assign the result to ID
+    ID = stringSequenID.padStart(zerID + 1, '0');
+  } else {
+    // if the condition is false, increment zerID by 2 then pad stringSequenID with zeros at the beginning until it has a length of zeroID + 1, and assign the result to ID
+    zerID = zerID + 2;
+    ID = stringSequenID.padStart(zerID + 1, '0'); 
+  }
+  return ID;
+}
 //Initial Configuration
 alert("Here you can enter the initial configuration. Open the console to see the results");
 let numb1 = prompt("STEP 1 - Write a number from 1 to 6 to indicate after how many weeks the products will have to be removed", "1");
