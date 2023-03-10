@@ -1,4 +1,4 @@
-// prende la data attuale e restituisce un oggetto, cosi ci possiamo lavorare sopra
+// prende la data attuale e restituisce un oggetto
 let formatDate = () => {
   const date = new Date();
   let year = date.getFullYear();
