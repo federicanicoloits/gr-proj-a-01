@@ -10,24 +10,24 @@ let sequentialID = 0;
  * @param {number} zerID 
  * @returns {string} ID
  */
-function generateID(sequenID, zerID){
+function generateID(sequentialID, zeroID){
   // increment sequentialID by one
-  sequenID++;
+  sequentialID++;
   // convert sequenID to a string and assign it to stringSequenID
-  let stringSequenID = sequenID.toString();
-  // assign the sum of zerID and 1 to stringZeroID
-  let stringZeroID = zerID + 1;
+  let stringSequenID = sequentialID.toString();
+  // assign the sum of zeroID and 1 to stringZeroID
+  let stringZeroID = zeroID + 1;
   // convert stringZeroID to a string
   stringZeroID = stringZeroID.toString();
   let ID;
   // check if the length of stringSequenID is less than or equal to the length of stringZeroID
   if (stringSequenID.length <= stringZeroID.length){
     // if the condition is true, pad stringSequenID with zeros at the beginning until it has a length of zeroID + 1, and assign the result to ID
-    ID = stringSequenID.padStart(zerID + 1, '0');
+    ID = stringSequenID.padStart(zeroID + 1, '0');
   } else {
-    // if the condition is false, increment zerID by 2 then pad stringSequenID with zeros at the beginning until it has a length of zeroID + 1, and assign the result to ID
-    zerID = zerID + 2;
-    ID = stringSequenID.padStart(zerID + 1, '0'); 
+    // if the condition is false, increment zeroID by 2 then pad stringSequenID with zeros at the beginning until it has a length of zeroID + 1, and assign the result to ID
+    zeroID = zeroID + 2;
+    ID = stringSequenID.padStart(zeroID + 1, '0'); 
   }
   return ID;
 }
