@@ -6,7 +6,8 @@
 3. [Authors](#authors)
 4. [License](#license)
 5. [Standard Used](#standard-used)
-6. [Approach To Solution](#approach-to-solution)
+6. [Browser Compatibility](#browser-compatibility)
+7. [Approach To Solution](#approach-to-solution)
 
 ## Project Requirement
 ***
@@ -49,6 +50,11 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 ***
 Variables: camelCase  
 Files and Folder: kebab-case
+
+## Browser Compatibility
+![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![IE](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![Opera](https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)
+--- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | 10+ ✔ | Latest ✔ | 6.1+ ✔ |
 
 ## Approach To Solution
 ***
