@@ -13,7 +13,7 @@ let sequentialID = 0;
 function generateID(){
   // increment sequentialID by one
   sequentialID++;
-  // convert sequenID to a string and assign it to stringSequenID
+  // convert sequentialID to a string and assign it to stringSequenID
   let stringSequenID = sequentialID.toString();
   // assign the sum of zeroID and 1 to stringZeroID
   let stringZeroID = zeroID + 1;
