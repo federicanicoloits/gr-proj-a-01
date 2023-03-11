@@ -10,7 +10,7 @@ let sequentialID = 0;
  * @param {number} zerID 
  * @returns {string} ID
  */
-function generateID(sequentialID, zeroID){
+function generateID(){
   // increment sequentialID by one
   sequentialID++;
   // convert sequenID to a string and assign it to stringSequenID
