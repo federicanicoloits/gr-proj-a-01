@@ -6,8 +6,8 @@
 let sequentialID = 0;
 /**
  * This function return the unique ID of a product
- * @param {number} sequenID - the sequential number to increment
- * @param {number} zerID 
+ * @param {number} sequentialID - the sequential number to increment
+ * @param {number} zeroID - the zeros before a number with a one digit
  * @returns {string} ID
  */
 function generateID(){
