@@ -6,8 +6,6 @@
 let sequentialID = 0;
 /**
  * This function return the unique ID of a product
- * @param {number} sequentialID - the sequential number to increment
- * @param {number} zeroID - the zeros before a number with a one digit
  * @returns {string} ID
  */
 function generateID(){
@@ -33,10 +31,9 @@ function generateID(){
 }
 export {generateID, initialControl}
 /**
- * The function takes an initialConfig object as a parameter and checks each value of the object to ensure it is a number greater than 0 and returns a modified object
- * @param {object} initialConfig - object that contain the initial configuration
+ * The function checks each value of the initialConfig object to ensure it is a number greater than 0 and the object is modified
  */
-function initialControl(initialConfig){
+function initialControl(){
   // Initialize an empty array for control values
   let control = [];
 
