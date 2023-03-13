@@ -15,8 +15,17 @@ let padWord = (array) => {
     let firstDifference = Math.floor(difference / 2); //arrotondo per difetto
     let lastDiffernce = Math.round(difference / 2); // arrotondo per eccesso
     
-    // repeat permette di 'stringa'.reapet(n_volte);
-    let output = '*'.repeat(firstDifference) + element + '*'.repeat(lastDiffernce);
+    let output;
+    let space = element.indexOf(' '); // uso indice e faccio una ricerca per lo spazio, se non lo trovo il risultato e: -1
+    if (space == -1) {
+      // repeat permette di 'stringa'.reapet(n_volte);
+       output = '*'.repeat(firstDifference) + element + '*'.repeat(lastDiffernce);
+    }
+    else {
+      let newWord = element.replace(' ', '*');
+       output = '*'.repeat(firstDifference) + newWord + '*'.repeat(lastDiffernce);
+    };
+
     console.log(output);
   };
 };
@@ -34,15 +43,7 @@ let nameExtraction = () => {
   for(i = 0; i < actualFood.length; i++) {
     let numRandom = getRandomInt(); // ottengo n random
     let randomWord = food[numRandom]; //ottengo una parola random
-    
-    let space = randomWord.indexOf(' '); // uso indice e faccio una ricerca per lo spazio, se non lo trovo il risultato e: -1
-    if (space == -1) {
       actualFood[i] = randomWord;
-    }
-    else {
-      let newWord = randomWord.replace(' ', '*');//questo l ho fatto qua dato che e qua che si estraggono le parole
-      actualFood[i] = newWord;
-    };
   };
   return actualFood;
 };
@@ -52,3 +53,6 @@ nameExtraction();
 padWord(nameExtraction());
 
 // !rember per tutti se usate arrow function --> ricordare che non sono soggette al hoisting
+
+
+console.log('%c  this is a red string', 'color:red; font-size:30px;')
