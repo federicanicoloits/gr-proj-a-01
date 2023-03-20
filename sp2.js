@@ -40,3 +40,4 @@ let arrayOfProducts = [
     return difference;
   }, status: 'new'}
 ];
+indexOfID++;
