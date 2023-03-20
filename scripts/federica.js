@@ -23,9 +23,8 @@ function generateID(){
     // if the condition is true, pad stringSequenID with zeros at the beginning until it has a length of zeroID + 1, and assign the result to ID
     ID = stringSequenID.padStart(zeroID + 1, '0');
   } else {
-    // if the condition is false, increment zeroID by 2 then pad stringSequenID with zeros at the beginning until it has a length of zeroID + 1, and assign the result to ID
-    zeroID = zeroID + 2;
-    ID = stringSequenID.padStart(zeroID + 1, '0'); 
+    // if the condition is false, ID is equal to stringSequenID.
+    ID = stringSequenID;
   }
   return ID;
 }
