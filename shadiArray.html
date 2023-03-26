@@ -1,0 +1,88 @@
+<html>
+<head></head>
+<body>
+
+
+    <script>
+        
+        let food = [];
+        let time = 2000;
+        
+        for(i = 0; i < 3; i++) {
+            for(j = 0 ; j < 10; j++) {
+                if(i == 0){
+                    food.push('water')
+                }
+                else if(i == 1) {
+                    food.push('apple')
+                }
+                else{
+                    food.push('tomatoes');      
+                };
+            };
+            console.log(food.slice(0,food.length));
+                        // senza mettere da indice alla sua lunghezza, non capsico perche mi stampasse sempre 30
+                // console.log(food.slice(0,food.length));
+            // if(i == 0) {  
+            //     print();
+            // }
+            // else if(i == 1) {
+            //     setTimeout(print, 2000);
+            // }
+        //     if (i == 0) {
+        //         print();
+        //     }
+        //     else if(i != 0) {
+        //     setTimeout(print,time)
+        //    }
+
+        //     function print() {
+        //         console.log(food.slice(0,food.length))
+        //     };
+               
+        };
+
+        let food2 = [];
+
+    let count = 0;
+    let id = setInterval(addArr, 2000);
+
+    function addArr() {
+        for(i = 0; i < 10; i++) {
+            food2.push('wine');
+        };
+        console.log(food2.slice(0, food2.length));
+        count++;
+        if(count >= 3) {
+            clearInterval(id);
+        };
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+
+</html>
